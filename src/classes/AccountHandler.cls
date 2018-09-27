@@ -27,6 +27,7 @@ public class AccountHandler {
 			upsert c;
             
         }catch(DMLException ex){
+        	System.debug('Throwing Exception: ' + ex.getMessage());
             return null;
         }
         return a;
